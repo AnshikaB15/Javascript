@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Emojis</title>
+		<script>
+		function makeBig(){
+			document.getElementById("mood").width = "400"
+			document.getElementById("mood").height = "400"
+		}
+		
+		function makeSmall(){
+			document.getElementById("mood").width  = "200" ;
+			document.getElementById("mood").height  = "200" ;
+		}
+		
+		function makeNormal(){
+			document.getElementById("mood").width  = "300" ;
+			document.getElementById("mood").height  = "300" ;
+		}
+	</script>
+	</head>
+	<body>
+		<center>
+			<img id='mood' src="https://cookchildrens.org/SiteCollectionImages/covid19/icon-sad.png" width="300" height="300" />
+			<br /><br /><br />
+			<button onclick="document.getElementById('mood').src='https://images-na.ssl-images-amazon.com/images/I/61s4T4fkRBL._AC_SL1500_.jpg'">
+					I feel Happy!
+			</button>
+			<button onclick="document.getElementById('mood').src='https://cookchildrens.org/SiteCollectionImages/covid19/icon-sad.png'">I am back to being Sad!</button>
+			<button onclick="document.getElementById('mood').src='https://cdn.pixabay.com/photo/2018/05/27/00/31/hungry-3432567_960_720.jpg'">I am Nervous!</button>
+			<button onclick="document.getElementById('mood').src='https://observer.com/wp-content/uploads/sites/2/2014/11/sleep.png'">I am Tired!</button>
+			<button onclick="makeBig()">Make it Big!</button>
+			<button onclick="makeSmall()">Make it Small!</button>
+			<button onclick="makeNormal()">Make it Normal size again!</button>
+		</center>
+	</body>
+</html>
